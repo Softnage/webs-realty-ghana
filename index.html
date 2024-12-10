@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webs Realty | Home</title>
+    <meta name="title" content="Webs Realty">
+    <meta name="description" content="This is a real estate broker for apartments and properties in Dubai">
+    <link rel="shortcut icon" href="./assets/images/webs-reality-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header active" data-header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/webs-reality-logo.png" width="100" height="72" alt="web realty logo">
+            </a>
+
+            <nav class="navbar active" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="index.html" class="navbar-link label-medium active">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="navbar-link label-medium dropdown-toggle" href="about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="terms-conditions.html" class="label-medium">Terms & Conditions</a></li>
+                            <li><a href="privacy-policy.html" class="label-medium">Privacy Policy</a></li>
+                            <li><a href="#" class="label-medium">FAQ's</a></li>
+                            <li><a href="contact.html" class="label-medium">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="property.html" class="navbar-link label-medium ">Properties</a>
+                    </li>
+                    <li>
+                        <a href="services.html" class="navbar-link label-medium">Services</a>
+                    </li>
+                </ul>
+                <div class="navbar-wrapper">
+                    <a href="contact.html" class=" btn btn-fill label-medium">Contact Us</a>
+                    <!-- <a href="#" class="btn-link label-medium">Get Started</a> -->
+                </div>
+            </nav>
+
+            <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+                <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+                <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+
+            <section class="hero">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="./assets/videos/home_banner_video_a736cf348b.mp4" type="video/mp4">
+                </video>
+                <div class="container">
+                    <div class="hero-content" data-aos="fade-up">
+                        <h1 class="headline-large hero-title">
+                           Find a Perfect Home in Dubai
+                        </h1>
+                        <p class="body-large hero-text">
+                            The right home is more than a place—it’s where you can truly be yourself. Don’t stop searching until you find the one that feels like it was made for you.
+                        </p>
+
+                        <form id="searchForm" class="search-bar">
+                            <label class="search-item">
+                                <span class="label-medium label">Want to</span>
+                                <select name="wantTo" id="wantTo" class="search-item-field body-medium">
+                                    <option value="any">Any</option>
+                                    <option value="buy">Buy</option>
+                                    <option value="sell">Rent</option>
+                                </select>
+                            </label>
+                        
+                            <label class="search-item">
+                                <span class="label-medium label">Property Type</span>
+                                <select name="propertyType" id="propertyType" class="search-item-field body-medium">
+                                    <option value="any">Any</option>
+                                    <option value="houses">Houses</option>
+                                    <option value="apartments">Apartments</option>
+                                    <option value="villas">Villas</option>
+                                </select>
+                            </label>
+                        
+                            <label class="search-item">
+                                <span class="label-medium label">Location</span>
+                                <input type="text" id="location" name="location" placeholder="City, Area..." class="search-item-field body-medium">
+                            </label>
+                        
+                            <button type="submit" class="search-btn">
+                                <span class="label-medium">Search</span>
+                            </button>
+                        </form>
+                        
+                        <ul id="searchResults" class="search-results-list"></ul>                        
+                        
+                    </div>
+
+                    <!-- <img src="./assets/images/hero.png" alt="" width="816" height="659" role="presentation" class="hero-banner"> -->
+                </div>
+            </section>
+
+            <section class="section property" aria-labelledby="property-label">
+                <div class="container">
+                    <div class="title-wrapper">
+                        <div class="">
+                            <h2 class="section-title headline-small" data-aos="fade-right">
+                                Own a Home in Dubai
+                            </h2>
+
+                            <p class="section-text body-large" data-aos="fade-right">
+                                Explore a diverse range of luxury apartments, elegant villas, and family-friendly homes tailored to meet your lifestyle needs in Dubai. Make your dream home a reality.   
+                            </p>
+
+                            <a href="property.html" class="btn btn-outline explore-btn" data-aos="fade-left">
+                                <span class="label-mediumm">Explore More</span>
+                                
+
+                                <span class="material-symbols-rounded" aria-hidden="true">
+                                    arrow_outward
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="property-list"> 
+                        <div class="card" data-aos="fade-down-right">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width: 585; --height:390" >
+                                    <img src="./assets/images/terra-heights.jpg" alt="Home realty 1" class="img-cover" >
+                                </figure>
+
+                                <span class="badge label-medium">Residential</span>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorites">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">
+                                    AED 1,496,888
+                                </span><br>
+                                <span class="title-large text-danger">
+                                    $406,418.67
+                                </span>
+
+                                <h3>
+                                    <a href="" class="title-small card-title">EX Terra Heights Building 4-1-105 
+                                    </a>
+                                </h3>
+
+                                <address class="body-medium card-tex">
+                                    Expo Living Terra Heights
+                                </address>
+
+                                <div class="card-meta-list">
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Bed 1</span> 
+                                    </div>
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">floor</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Floor 1</span> 
+                                    </div>
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">734 SQ.FT / 68.19 SQ.M</span> 
+                                    </div>
+                                </div>
+                                <button class="button" onclick="window.location.href='contact.html'">
+
+  
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                    </svg> -->
+                                  
+                                    
+                                    <div class="text d-flex">
+                                        <i class="bi bi-envelope me-2"></i> Enquire
+                                    </div>
+                                  
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="flip-left">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width: 585; --height:390" >
+                                    <img src="./assets/images/dubai-hills-estate-club-place.jpg" alt="Home realty 1" class="img-cover" >
+                                </figure>
+
+                                <span class="badge label-mediu">Residential</span>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorites" data-toggle-btn>
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">
+                                    AED 1,562,888
+                                </span><br>
+                                <span class="title-large text-danger">
+                                    $424,842.67
+                                </span>
+
+                                <h3>
+                                    <a href="" class="title-small card-title">DE Club Place B-P-P06 </a>
+                                </h3>
+
+                                <address class="body-medium card-tex">
+                                   Dubai Hills Estates - Club Place
+                                </address>
+
+                                <div class="card-meta-list">
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Bed 1</span> 
+                                    </div>
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">floor</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Floor P</span> 
+                                    </div>
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">	748 SQ.FT / 69.49 SQ.M</span> 
+                                    </div>
+                                </div>
+                                <button class="button" onclick="window.location.href='contact.html'">
+
+  
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                    </svg> -->
+                                  
+                                    
+                                    <div class="text d-flex">
+                                        <i class="bi bi-envelope me-2"></i> Enquire
+                                    </div>
+                                  
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="flip-right">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width: 585; --height:390" >
+                                    <img src="./assets/images/dubai-hills-estate-green-side.jpg" alt="Home realty 1" class="img-cover" >
+                                </figure>
+
+                                <span class="badge label-medium">Residential</span>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorites">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">
+                                    AED 1,565,888
+                                </span><br>
+                                <span class="title-large text-danger">
+                                    $426,842.67
+                                </span>
+
+                                <h3>
+                                    <a href="" class="title-small card-title">DE Greenside Building A-P-P10 </a>
+                                </h3>
+
+                                <address class="body-medium card-tex">
+                                    Dubai Hills Estate - Greenside
+                                </address>
+
+                                <div class="card-meta-list">
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Bed 1</span> 
+                                    </div>
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">Floor</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Floor P</span> 
+                                    </div>
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">	745 SQ.FT / 69.21 SQ.M</span> 
+                                    </div>
+                                </div>
+                                <button class="button" onclick="window.location.href='contact.html'">
+
+  
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                    </svg> -->
+                                  
+                                    
+                                    <div class="text d-flex">
+                                        <i class="bi bi-envelope me-2"></i> Enquire
+                                    </div>
+                                  
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="fade-down-left">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width: 585; --height:390" >
+                                    <img src="./assets/images/ex-terra-heights.jpg" alt="Home realty 1" class="img-cover" >
+                                </figure>
+
+                                <span class="badge label-medium">Residential</span>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorites">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">
+                                    AED 2,084,888
+                                </span><br>
+                                <span class="title-large text-danger">
+                                    $567,041.34
+                                </span>
+
+                                <h3>
+                                    <a href="" class="title-small card-title">EX Terra Heights Building 2-2-209 </a>
+                                </h3>
+
+                                <address class="body-medium card-tex">
+                                    Expo Living - Terra Heights
+                                </address>
+
+                                <div class="card-meta-list">
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Beds 2</span> 
+                                    </div>
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">floor</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Floor 2</span> 
+                                    </div>
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">	1097 SQ.FT / 101.91 SQ.M</span> 
+                                    </div>
+                                </div>
+                                <button class="button" onclick="window.location.href='contact.html'">
+
+  
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                    </svg> -->
+                                  
+                                    
+                                    <div class="text d-flex">
+                                        <i class="bi bi-envelope me-2"></i> Enquire
+                                    </div>
+                                  
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="flip-up">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width: 585; --height:390" >
+                                    <img src="./assets/images/darmac-hills-golf-greens.jpg" alt="Home realty 1" class="img-cover" >
+                                </figure>
+
+                                <span class="badge label-medium">Residential</span>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorites">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">
+                                    AED 1,447,000
+                                </span><br>
+                                <span class="title-large text-danger">
+                                    $393,904.10
+                                </span>
+
+                                <h3>
+                                    <a href="" class="title-small card-title">Golf Greens | Apartment</a>
+                                </h3>
+
+                                <address class="body-medium card-tex">
+                                    Damac Hills, Dubai 
+                                </address>
+
+                                <div class="card-meta-list">
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Bed 1</span> 
+                                    </div>
+                                    <!-- <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">Floor</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true"></span> 
+                                    </div> -->
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">68.90 sq. mt.</span> 
+                                    </div>
+                                </div>
+                                <button class="button" onclick="window.location.href='contact.html'">
+
+  
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                    </svg> -->
+                                  
+                                    
+                                    <div class="text d-flex">
+                                        <i class="bi bi-envelope me-2"></i> Enquire
+                                    </div>
+                                  
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="fade-down-right">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width: 585; --height:390" >
+                                    <img src="./assets/images/darmac-bay-2.jpg" alt="Home realty 1" class="img-cover" >
+                                </figure>
+
+                                <span class="badge label-medium">Residential</span>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorites">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">
+                                    AED 7,342,000
+                                </span><br>
+                                <span class="title-large text-danger">
+                                    $1,998,757.60
+                                </span>
+
+                                <h3>
+                                    <a href="" class="title-small card-title">Damac Bay 2 | Apartment</a>
+                                </h3>
+
+                                <address class="body-medium card-tex">
+                                    Dubai Harbour, Dubai
+                                </address>
+
+                                <div class="card-meta-list">
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Beds 3</span> 
+                                    </div>
+                                    <!-- <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">6 Bed</span> 
+                                    </div> -->
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">163.96 sq. mt.</span> 
+                                    </div>
+                                </div>
+                                <button class="button" onclick="window.location.href='contact.html'">
+
+  
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                    </svg> -->
+                                  
+                                    
+                                    <div class="text d-flex">
+                                        <i class="bi bi-envelope me-2"></i> Enquire
+                                    </div>
+                                  
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="fade-down-left">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width: 585; --height:390" >
+                                    <img src="./assets/images/lagoon-views-darmac.jpg" alt="Home realty 1" class="img-cover" >
+                                </figure>
+
+                                <span class="badge label-medium">Residential</span>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorites">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">
+                                    AED 2,434,000
+                                </span><br>
+                                <span class="title-large text-danger">
+                                    $662,937.20
+                                </span>
+
+                                <h3>
+                                    <a href="" class="title-small card-title">Lagoon Views | Apartment</a>
+                                </h3>
+
+                                <address class="body-medium card-tex">
+                                    DAMAC Lagoons, Dubai
+                                </address>
+
+                                <div class="card-meta-list">
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Beds 2</span> 
+                                    </div>
+                                    <!-- <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">6 Bed</span> 
+                                    </div> -->
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">146.75 sq. mt.</span> 
+                                    </div>
+                                </div>
+                                <button class="button" onclick="window.location.href='contact.html'">
+
+  
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                    </svg> -->
+                                  
+                                    
+                                    <div class="text d-flex">
+                                        <i class="bi bi-envelope me-2"></i> Enquire
+                                    </div>
+                                  
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="flip-down">
+                            <div class="card-banner">
+                                <figure class="img-holder" style="--width: 585; --height:390" >
+                                    <img src="./assets/images/damac-casa.png" alt="Home realty 1" class="img-cover" >
+                                </figure>
+
+                                <span class="badge label-medium">Residential</span>
+
+                                <button class="icon-btn fav-btn" aria-label="add to favorites">
+                                    <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                                </button>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="title-large">
+                                    AED 24,627,000
+                                </span><br>
+                                <span class="title-large text-danger">
+                                    $6,705,746.10
+                                </span>
+
+                                <h3>
+                                    <a href="" class="title-small card-title">Damac Casa | Apartment</a>
+                                </h3>
+
+                                <address class="body-medium card-tex">
+                                    Al Sufouh, Dubai
+                                </address>
+
+                                <div class="card-meta-list">
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">Beds 5</span> 
+                                    </div>
+                                    <!-- <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">6 Bed</span> 
+                                    </div> -->
+                                    <div class="meta-item">
+                                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span> 
+
+                                       <span class="meta-text label-medium" aria-hidden="true">577.43 sq. mt.</span> 
+                                    </div>
+                                </div>
+                                <button class="button" onclick="window.location.href='contact.html'">
+
+  
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                                    </svg> -->
+                                  
+                                    
+                                    <div class="text d-flex">
+                                        <i class="bi bi-envelope me-2"></i> Enquire
+                                    </div>
+                                  
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section feature" aria-labelledby="feature-label">
+                <div class="container">
+                    <figure class="feature-banner" data-aos="zoom-in-right">
+                        <img class="img-cover" src="./assets/images/feature-banner-1.jpg" alt="feature banner" width="1020" height="690" loading="lazy">
+                    </figure>
+
+                    <div class="feature-content" data-aos="zoom-in-left">
+                        <h2 class="headline-medium" id="feature-label">
+                            We Specialize In Finding You A Perfect Home
+                        </h2>
+                        <p class="body-large feature-text">
+                            Our dedicated team connects you with properties in Dubai that blend comfort, style, and convenience. From modern apartments to luxurious villas, we’ve got you covered.
+                        </p>
+
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class ="material-symbols-rounded feature-icon" aria-hidden="true"> check_circle</span>
+
+                                <span class="body-medium">
+                                    Smart Home
+                                </span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+
+                                <span class="body-medium">
+                                    Beautiful Scene Around
+                                </span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+
+                                <span class="body-medium">
+                                    Exceptional lifestyle
+                                </span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+
+                                <span class="body-medium">
+                                    Complete 24/7 Security
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section> 
+            <section class="section feature feature-2" aria-labelledby="feature-label-2">
+                <div class="container">
+                    <figure class="feature-banner" data-aos="zoom-in-left">
+                        <img class="img-cover" src="./assets/images/feature-banner-2.jpg" alt="feature banner" width="1020" height="690" loading="lazy">
+                    </figure>
+
+                    <div class="feature-content" data-aos="zoom-in-right">
+                        <h2 class="headline-medium" id="feature-label-2">
+                            Connecting Ghanaians to Dream Homes in Dubai
+                        </h2>
+                        <p class="body-large feature-text">
+                            Whether you're an investor or looking to settle in Dubai, we help Ghanaians discover premium properties that offer exceptional value and unmatched quality.
+                        </p>
+
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+
+                                <span class="body-medium">
+                                    Smart Home
+                                </span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+
+                                <span class="body-medium">
+                                    Beautiful Scene Around
+                                </span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+
+                                <span class="body-medium">
+                                    Exceptional lifestyle
+                                </span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
+
+                                <span class="body-medium">
+                                    Complete 24/7 Security
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- <section class="section video">
+                <div class="container">
+                    <div class="video-card">
+                        <button class="play-btn" aria-label="play video">
+                            <span class="material-symbols-rounded" aria-hidden="true">play_arrow</span>
+                        </button>
+                    </div>
+                </div>
+            </section> -->
+
+
+            <section class="section story">
+                <div class="container">
+                    <div class="title-wrapper">
+                        <div>
+                            <p class="section-subtitle title-medium" data-aos="fade-right">
+                                Our Customers
+                            </p>
+
+                            <h2 class="section-title headline-medium"> We help Most Families & Individuals Find their True Homes</h2>
+
+                            <ul class="avatar-list" data-aos="fade-right">
+                                <li class="avatar">
+                                    <img class="img-cover" src="./assets/images/avatar-1.jpg" alt="John Smith" loading="lazy" width="120" height="80">
+                                </li>
+                                <li class="avatar">
+                                    <img class="img-cover" src="./assets/images/avatar-2.jpg" alt="John Smith" loading="lazy" width="120" height="80">
+                                </li>
+                                <li class="avatar">
+                                    <img class="img-cover" src="./assets/images/avatar-3.jpg" alt="John Smith" loading="lazy" width="120" height="80">
+                                </li>
+                                <li class="avatar">
+                                    <img class="img-cover" src="./assets/images/avatar-4.jpg" alt="John Smith" loading="lazy" width="120" height="80">
+                                    <div class="overlay-content">
+                                        <span class="label-medium">
+                                            99+
+                                        </span>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <a href="" class="btn btn-outline" data-aos="fade-left">
+                            <span class="label-medium">View More</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+                        </a>
+                    </div>
+                    <div class="partners">
+                        <div class="row py-5 align-items-center">
+                            <div class="col-md-6" data-aos="fade-right">
+                                <h1 class="title-large partner-heading">OUR PARTNERS INCLUDE</h1>
+                            </div>
+                            <div class="col-md-6 partners-images" data-aos="fade-left">
+                                <img src="./assets/images/darmar-logo.png" alt="" width="200">
+                                <img src="./assets/images/emaar-logog.png" alt="" width="200">
+                                <img src="./assets/images/first-group-logo.png" alt="" width="200">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-list">
+                        <li class="story-card" style="background-image: url('./assets/images/property-1.jpg');" data-aos="fade-up-right">
+                            <a href="" class="overlay-content">
+                                <div class="">
+                                    <h3 class="title-small">Houses</h3>
+
+                                    <div class="rating-wrapper">
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+
+                                        <data value="5" class="title-small rating-text">5.0</data>
+                                    </div>
+                                </div>
+
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/property-1.jpg" alt="" width="56" height="56" loading="lazy" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image: url('./assets/images/property-2.jpg');" data-aos="flip-up">
+                            <a href="" class="overlay-content">
+                                <div class="">
+                                    <h3 class="title-small">Apartments</h3>
+
+                                    <div class="rating-wrapper">
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+
+                                        <data value="5" class="title-small rating-text">5.0</data>
+                                    </div>
+                                </div>
+
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/property-2.jpg" alt="" width="56" height="56" loading="lazy" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image: url('./assets/images/property-3.jpg');" data-aos="fade-up-left">
+                            <a href="" class="overlay-content">
+                                <div class="">
+                                    <h3 class="title-small">Villas</h3>
+
+                                    <div class="rating-wrapper">
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+
+                                        <data value="5" class="title-small rating-text">5.0</data>
+                                    </div>
+                                </div>
+
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/property-3.jpg" alt="" width="56" height="56" loading="lazy" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image: url('./assets/images/property-4.jpg');" data-aos="zoom-in-right">
+                            <a href="" class="overlay-content">
+                                <div class="">
+                                    <h3 class="title-small">Bungalow</h3>
+
+                                    <div class="rating-wrapper">
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+
+                                        <data value="5" class="title-small rating-text">5.0</data>
+                                    </div>
+                                </div>
+
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/property-4.jpg" alt="" width="56" height="56" loading="lazy" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image: url('./assets/images/property-5.jpg');" data-aos="zoom-in">
+                            <a href="" class="overlay-content">
+                                <div class="">
+                                    <h3 class="title-small">Townhomes</h3>
+
+                                    <div class="rating-wrapper">
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+
+                                        <data value="5" class="title-small rating-text">5.0</data>
+                                    </div>
+                                </div>
+
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/property-5.jpg" alt="" width="56" height="56" loading="lazy" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="story-card" style="background-image: url('./assets/images/property-6.jpg');" data-aos="flip-right">
+                            <a href="" class="overlay-content">
+                                <div class="">
+                                    <h3 class="title-small">Loft</h3>
+
+                                    <div class="rating-wrapper">
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+                                        <div class="material-symbols-rounded">star</div>
+
+                                        <data value="5" class="title-small rating-text">5.0</data>
+                                    </div>
+                                </div>
+
+                                <figure class="card-avatar">
+                                    <img src="./assets/images/property-6.jpg" alt="" width="56" height="56" loading="lazy" class="img-cover">
+                                </figure>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <!-- <a href="#" class="logo">
+                        <img src="./assets/images/webs-reality-logo.png" alt="websrealty" width="190">
+                    </a> -->
+
+                    <!-- <p class="body-medium footer-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, aperiam sunt? Numquam eaque quia dolor possimus temporibus doloremque animi id.  
+                    </p> -->
+                </div>
+
+                <nav class="footer-nav" aria-labelledby="nav-label-1">
+                    <p class="title-small footer-list-title" id="nav-label-1">Quick Link</p>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a href="index.html" class="body-medium footer-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="body-medium footer-link">About</a>
+                        </li>
+                        <li>
+                            <a href="property.html" class="body-medium footer-link">Properties</a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="body-medium footer-link">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav" aria-labelledby="nav-label-2">
+                    <p class="title-small footer-list-title" id="nav-label-2">Get in Touch</p>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a href="property.html" class="body-medium footer-link">Buy</a>
+                        </li>
+                        <li>
+                            <a href="property.html" class="body-medium footer-link">Rent</a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="body-medium footer-link">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-nav" aria-labelledby="nav-label-3">
+                    <p class="title-small footer-list-title" id="nav-label-3">Contact Info</p>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a href="contact.html" class="body-medium footer-link">info@websrealty.com</a>
+                        </li>
+                        <li>
+                            <address class="address body-medium">
+                                +233 54 428 2179
+                            </address>
+                        </li>
+                        <li>
+                            <ul class="social-list">
+                                <li>
+                                    <a href="#" class="social-link">
+                                        <img src="./assets/images/facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://x.com/websrealty_eva" class="social-link"  target="_blank">
+                                        <img src="./assets/images/twitter.svg" alt="twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/websrealty_gh/" class="social-link" target="_blank">
+                                        <img src="./assets/images/insta.svg" alt="instagram">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright body-medium">
+                   Copyright @ 2024 Webs Realty 
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init( {
+            offset: 400,
+            duration: 900
+        });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
